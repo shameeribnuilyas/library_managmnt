@@ -62,48 +62,50 @@ $this->load->view('components/sidemenu');
     <section class="content">
 
       <!-- Default box -->
-  <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Add Route</h3>
-            </div>
-            <!-- /.box-header -->
-            <!-- form start -->
-            <form class="form-horizontal">
-              <div class="box-body">
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Enter Start place</label>
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Add Location</h3>
 
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Start place">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Enter via place</label>
-
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Enter via place">
-                  </div>
-                </div>
-
-
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Enter end place</label>
-
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Enter end place">
-                  </div>
-                </div>
-
-
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer">
-                <button type="submit" class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-info pull-right">Add</button>
-              </div>
-              <!-- /.box-footer -->
-            </form>
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+              <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+              <i class="fa fa-times"></i></button>
           </div>
+        </div>
+        <div class="box-body">
+           <div class="form-group">
+              <div class="row">
+                 <label for="inputEmail3" class="col-sm-2 control-label">Enter Member Name</label>
+                <div class="col-xs-5">
+                    <input class="form-control" type="text" placeholder="Enter Member Name">     
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                 <label for="inputEmail3" class="col-sm-2 control-label">Enter Mobile Number</label>
+                <div class="col-xs-5">
+                    <input class="form-control" type="text" placeholder="Enter Mobile Number">     
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+              <div class="form-group">
+              <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5">
+                   <button type="button" class="btn btn-block btn-primary">Add</button>
+                </div>
+              </div>
+              </div>
+        </div>
+        <!-- /.box-footer-->
+      </div>
       <!-- /.box -->
 
     </section>

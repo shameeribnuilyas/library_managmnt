@@ -18,17 +18,13 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>public/dist/css/skins/_all-skins.min.css">
 
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/plugins/select2/select2.min.css">
-
-
-
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
- 
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -68,7 +64,7 @@ $this->load->view('components/sidemenu');
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">View Bus</h3>
+          <h3 class="box-title">View User</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -78,125 +74,39 @@ $this->load->view('components/sidemenu');
           </div>
         </div>
         <div class="box-body">
-         
+          
 
 
-
-
- <div class="row">
+      <div class="row">
         <div class="col-md-12">
 
                 
             <!-- /.box-header -->
             <div class="box-body">
-            <div class="row">
-            <div class="col-xs-5">
-               <label>Select Bus Number</label>
-                <select class="form-control select2" style="width: 100%;">
-                  <option selected="selected">Alabama</option>
-                  <option>Alaska</option>
-                  <option>California</option>
-                  <option>Delaware</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Washington</option>
-                </select>
-            </div>
-            </div>
-              <div class="row">
-              <div class="col-xs-5">
-               <label>Select Bus Route</label>
-                <select class="form-control select2" style="width: 100%;">
-                  <option selected="selected">Alabama</option>
-                  <option>Alaska</option>
-                  <option>California</option>
-                  <option>Delaware</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Washington</option>
-                </select>
-              </div>
-              </div>
-              <div class="row">
-              <div class="col-xs-5">
-              <div class="form-group">
-                <label>Select Stops</label>
-                <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
-                  <option>Alabama</option>
-                  <option>Alaska</option>
-                  <option>California</option>
-                  <option>Delaware</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Washington</option>
-                </select>
-              </div>
-              </div>
-              </div>
-
-              <div class="row">
-              <div class="col-xs-5">
-              <div class="form-group">
-                           <!-- time Picker -->
-                  <div class="bootstrap-timepicker">
-                    <div class="form-group">
-                      <label>Journey Start Time</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control timepicker">
-                        <div class="input-group-addon">
-                          <i class="fa fa-clock-o"></i>
-                        </div>
-                      </div>
-                      <!-- /.input group -->
-                    </div>
-                    <!-- /.form group -->
-                  </div>
-
-              </div>
-              </div>
-              </div>
-
-              <div class="row">
-              <div class="col-xs-5">
-              <div class="form-group">
-                           <!-- time Picker -->
-                  <div class="bootstrap-timepicker">
-                    <div class="form-group">
-                      <label>Journey End Time</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control timepicker">
-                        <div class="input-group-addon">
-                          <i class="fa fa-clock-o"></i>
-                        </div>
-                      </div>
-                      <!-- /.input group -->
-                    </div>
-                    <!-- /.form group -->
-                  </div>
-              </div>
-              </div>
-              </div>
-               
-
-
-
               <table class="table table-bordered">
                 <tr>
                   <th style="width: 10px">slno</th>
-                  <th>Bus Route</th>
-                  <th>Bus Number</th>
-                  <th>Bus between </th>
+                  <th>Bin Number</th>
+                  <th>Location</th>
+                  <th>Progress</th>
+                  <th>Percentage</th>
+                  <th>info</th>
                 </tr>
                 <tr>
                   <td>1.</td>
                   <td>a@a.com</td>
+                  <td>tvm</td>
                   <td>
-                    aa
+                   <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                    </div>
                   </td>
-                  <td style="width: 300px">
-                      <div class="btn-group">
-                      <button type="button" class="btn btn-info">update</button>
-                      <button type="button" class="btn btn-danger">delete</button>
+                  <td style="width: 50px">
+                    <span class="badge bg-red" >55%</span>
+                  </td>
+                  <td style="width: 100px">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info">view members</button>
                     </div>
                   </td>
                 </tr>
@@ -211,17 +121,9 @@ $this->load->view('components/sidemenu');
                 <li><a href="#">3</a></li>
                 <li><a href="#">&raquo;</a></li>
               </ul>
-            </div>
+            </div>        
         </div>
-</div>
-
-
-
-
-
-
-
-
+      </div>
 
 
 
@@ -273,16 +175,5 @@ $this->load->view('components/sidebarcontroller');
 <script src="<?php echo base_url(); ?>public/dist/js/demo.js"></script>
 <!---Custom js--->
 <script src="<?php echo base_url(); ?>public/custom/js/script.js"></script>
-
-<script src="<?php echo base_url(); ?>public/plugins/select2/select2.full.min.js"></script>
-
-<script>
-  $(function () {
-    //Initialize Select2 Elements
-    $(".select2").select2();
-
-
-  });
-</script>
 </body>
 </html>

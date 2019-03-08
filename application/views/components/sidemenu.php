@@ -34,18 +34,20 @@
           </a>
           <ul class="treeview-menu">
             <li>
-              <a href="<?php echo site_url('menu/add_bus_no'); ?>"><i class="fa fa-circle-o"></i> Add Bus No</a></li>
+              <a href="<?php echo site_url('menu/add_location'); ?>"><i class="fa fa-circle-o"></i> Add Location</a></li>
             <li>
-              <a href="<?php echo site_url('menu/add_route'); ?>"><i class="fa fa-circle-o"></i> Add Route</a>
+              <a href="<?php echo site_url('menu/add_new_bin'); ?>"><i class="fa fa-circle-o"></i> Add New Bin</a></li>
+            <li>
+              <a href="<?php echo site_url('menu/add_new_member'); ?>"><i class="fa fa-circle-o"></i> Add New Member</a>
             </li>
             <li>
-              <a href="<?php echo site_url('menu/assign_bus_to_route'); ?>"><i class="fa fa-circle-o"></i> Assign Bus to Route</a>
+              <a href="<?php echo site_url('menu/bin_status'); ?>"><i class="fa fa-circle-o"></i>Bin Status</a>
             </li>
             <li>
-              <a href="<?php echo site_url('menu/view_user'); ?>"><i class="fa fa-circle-o"></i>View User</a>
+            <a href="<?php echo site_url('menu/assign_bin_member'); ?>"><i class="fa fa-circle-o"></i>Assign Bin Member</a>
             </li>
             <li>
-              <a href="<?php echo site_url('menu/view_bus'); ?>"><i class="fa fa-circle-o"></i>View Bus</a>
+              <a href="<?php echo site_url('menu/view_members'); ?>"><i class="fa fa-circle-o"></i>View Members</a>
             </li>
           </ul>
         </li>

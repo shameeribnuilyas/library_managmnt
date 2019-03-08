@@ -24,7 +24,7 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
- 
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -63,8 +63,9 @@ $this->load->view('components/sidemenu');
 
       <!-- Default box -->
       <div class="box">
+
         <div class="box-header with-border">
-          <h3 class="box-title">Add Bus Number</h3>
+          <h3 class="box-title">View Members</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -73,18 +74,60 @@ $this->load->view('components/sidemenu');
               <i class="fa fa-times"></i></button>
           </div>
         </div>
-        <div class="box-body">
-          <div class="col-xs-5">
-              <input class="form-control" type="text" placeholder="Enter Bus Number">     
-          </div>
-          <div class="col-xs-2">
-          <button type="button" class="btn btn-block btn-primary">Add</button>
-          </div>
+
+      <div class="box-body">
+      <div class="row">
+        <div class="col-md-12">
+
+                
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="width: 10px">slno</th>
+                  <th>Member Name </th>
+                  <th>Mobile No</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>a@a.com</td>
+                  <td>aa</td>
+                  <td style="width: 300px">
+                      <div class="btn-group">
+                      <button type="button" class="btn btn-info">update</button>
+                      <button type="button" class="btn btn-danger">delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+        
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
         <!-- /.box-body -->
-        <div class="box-footer">
-          
-        </div>
+              <div class="box-footer clearfix">
+              <ul class="pagination pagination-sm no-margin pull-right">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>  
         <!-- /.box-footer-->
       </div>
       <!-- /.box -->

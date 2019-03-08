@@ -17,30 +17,14 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>public/dist/css/skins/_all-skins.min.css">
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>public/plugins/daterangepicker/daterangepicker.css">
-  <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>public/plugins/datepicker/datepicker3.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>public/plugins/iCheck/all.css">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>public/plugins/colorpicker/bootstrap-colorpicker.min.css">
-  <!-- Bootstrap time Picker -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>public/plugins/timepicker/bootstrap-timepicker.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>public/plugins/select2/select2.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>public/dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>public/dist/css/skins/_all-skins.min.css">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
+ 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -80,7 +64,7 @@ $this->load->view('components/sidemenu');
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">Assign Bus to Route</h3>
+          <h3 class="box-title">Add New Bin</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -90,10 +74,18 @@ $this->load->view('components/sidemenu');
           </div>
         </div>
         <div class="box-body">
-           <div class="form-group">
-            <div class="row">
-            <div class="col-xs-5">
-               <label>Select Bus Route</label>
+         <div class="form-group">
+              <div class="row">
+                 <label for="inputEmail3" class="col-sm-2 control-label">Enter Bin Number</label>
+                <div class="col-xs-5">
+                    <input class="form-control" type="text" placeholder="Enter Bin Number">     
+                </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="row">
+                <label for="inputEmail3" class="col-sm-2 control-label">Select Location</label>
+                <div class="col-xs-5">
                 <select class="form-control select2" style="width: 100%;">
                   <option selected="selected">Alabama</option>
                   <option>Alaska</option>
@@ -102,52 +94,23 @@ $this->load->view('components/sidemenu');
                   <option>Tennessee</option>
                   <option>Texas</option>
                   <option>Washington</option>
-                </select>
-            </div>
-            </div>
+                </select>    
+                </div>
+              </div>
           </div>
-            <div class="row">
-              <div class="col-xs-12">
-              <div class="form-group">
-               <table class="table table-bordered">
-                <tr>
-                  <th style="width: 10px">slno</th>
-                  <th>Time</th>
-                  <th>Bus Number</th>
-                  <th>Via </th>
-                  <th>Stops</th>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td>a@a.com</td>
-                  <td>aa</td>
-                  <td>via place</td>
-                  <td style="width: 300px">
-                      <div class="btn-group">
-                      <button type="button" class="btn btn-info">Click to view Route</button>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            </div>
-            </div>
-
-
-
-
-             
+         
         </div>
         <!-- /.box-body -->
-        <div class="box-footer clearfix">
-              <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div>
+        <div class="box-footer">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5">
+                   <button type="button" class="btn btn-block btn-primary">Add</button>
+                </div>
+              </div>
+              </div>
+        </div>
         <!-- /.box-footer-->
       </div>
       <!-- /.box -->
@@ -183,19 +146,5 @@ $this->load->view('components/sidebarcontroller');
 <script src="<?php echo base_url(); ?>public/dist/js/demo.js"></script>
 <!---Custom js--->
 <script src="<?php echo base_url(); ?>public/custom/js/script.js"></script>
-<script src="<?php echo base_url(); ?>public/plugins/select2/select2.full.min.js"></script>
-<!-- bootstrap time picker -->
-<script src="<?php echo base_url(); ?>public/plugins/timepicker/bootstrap-timepicker.min.js"></script>
-<script>
-  $(function () {
-    //Initialize Select2 Elements
-    $(".select2").select2();
-    //Timepicker
-    $(".timepicker").timepicker({
-      showInputs: false
-    });
-
-  });
-</script>
 </body>
 </html>

@@ -80,7 +80,7 @@ $this->load->view('components/sidemenu');
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">Assign Bus to Route</h3>
+          <h3 class="box-title">Assign Bin to members</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -90,39 +90,28 @@ $this->load->view('components/sidemenu');
           </div>
         </div>
         <div class="box-body">
-            <div class="row">
-            <div class="col-xs-5">
-               <label>Select Bus Number</label>
-                <select class="form-control select2" style="width: 100%;">
-                  <option selected="selected">Alabama</option>
-                  <option>Alaska</option>
-                  <option>California</option>
-                  <option>Delaware</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Washington</option>
-                </select>
-            </div>
-            </div>
+            <div class="form-group">
               <div class="row">
-              <div class="col-xs-5">
-               <label>Select Bus Route</label>
-                <select class="form-control select2" style="width: 100%;">
-                  <option selected="selected">Alabama</option>
-                  <option>Alaska</option>
-                  <option>California</option>
-                  <option>Delaware</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Washington</option>
+                <label for="inputEmail3" class="col-sm-2 control-label">Select Bin Number</label>
+                <div class="col-xs-5">
+                    <select class="form-control select2" style="width: 100%;">
+                      <option selected="selected">Alabama</option>
+                          <option>Alaska</option>
+                          <option>California</option>
+                          <option>Delaware</option>
+                          <option>Tennessee</option>
+                          <option>Texas</option>
+                          <option>Washington</option>
                 </select>
+                </div>
               </div>
-              </div>
+            </div>
+
+            <div class="form-group">
               <div class="row">
-              <div class="col-xs-5">
-              <div class="form-group">
-                <label>Select Stops</label>
-                <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
+                <label for="inputEmail3" class="col-sm-2 control-label">Select Members</label>
+                <div class="col-xs-5">
+                 <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
                   <option>Alabama</option>
                   <option>Alaska</option>
                   <option>California</option>
@@ -132,61 +121,21 @@ $this->load->view('components/sidemenu');
                   <option>Washington</option>
                 </select>
               </div>
-              </div>
-              </div>
+                </div>
+            </div>
 
-              <div class="row">
-              <div class="col-xs-5">
-              <div class="form-group">
-                           <!-- time Picker -->
-                  <div class="bootstrap-timepicker">
-                    <div class="form-group">
-                      <label>Journey Start Time</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control timepicker">
-                        <div class="input-group-addon">
-                          <i class="fa fa-clock-o"></i>
-                        </div>
-                      </div>
-                      <!-- /.input group -->
-                    </div>
-                    <!-- /.form group -->
-                  </div>
-
-              </div>
-              </div>
-              </div>
-
-              <div class="row">
-              <div class="col-xs-5">
-              <div class="form-group">
-                           <!-- time Picker -->
-                  <div class="bootstrap-timepicker">
-                    <div class="form-group">
-                      <label>Journey End Time</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control timepicker">
-                        <div class="input-group-addon">
-                          <i class="fa fa-clock-o"></i>
-                        </div>
-                      </div>
-                      <!-- /.input group -->
-                    </div>
-                    <!-- /.form group -->
-                  </div>
-              </div>
-              </div>
-              </div>
-               
+            </div>
              
-        </div>
         <!-- /.box-body -->
         <div class="box-footer">
-         <div class="row">
-                  <div class="col-xs-2">
-                  <button type="button" class="btn btn-block btn-primary">Add</button>
-                  </div>
-               </div>
+             <div class="form-group">
+              <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5">
+                   <button type="button" class="btn btn-block btn-primary">Add</button>
+                </div>
+              </div>
+              </div>
         </div>
         <!-- /.box-footer-->
       </div>

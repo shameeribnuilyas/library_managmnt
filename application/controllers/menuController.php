@@ -22,89 +22,42 @@ class menuController extends CI_Controller {
         $this->load->view('index'); 
 	}
 
-	public function add_bus_no()
+	public function add_location()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/addBusno'); 
+        $this->load->view('menu/addLocation');
 	}
 
-		public function add_route()
+	public function add_new_bin()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/addRoute'); 
+        $this->load->view('menu/addnewBin'); 
 	}
 
-		public function assign_bus_to_route()
+		public function add_new_member()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/assignBusroute'); 
+        $this->load->view('menu/addnewMember'); 
 	}
 
-		public function view_user()
+		public function bin_status()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/viewUser'); 
-	}
-		public function view_bus()
-	{
-		$this->load->helper('url'); 
-        $this->load->view('menu/viewBus'); 
+        $this->load->view('menu/binStatus'); 
 	}
 
-
-	public function invoice()
+		public function assign_bin_member()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('pages/examples/invoice'); 
+        $this->load->view('menu/assignBinmember'); 
 	}
-
-	public function profile()
+		public function view_members()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('pages/examples/profile'); 
+        $this->load->view('menu/viewMembers'); 
 	}
 
 
-	public function login()
-	{
-		$this->load->helper('url'); 
-        $this->load->view('pages/examples/login'); 
-	}
-
-
-	public function register()
-	{
-		$this->load->helper('url'); 
-        $this->load->view('pages/examples/register'); 
-	}
-
-
-	public function f404()
-	{
-		$this->load->helper('url'); 
-        $this->load->view('pages/examples/f404'); 
-	}
-
-
-	public function f500()
-	{
-		$this->load->helper('url'); 
-        $this->load->view('pages/examples/f500'); 
-	}
-
-
-	public function blank()
-	{
-		$this->load->helper('url'); 
-        $this->load->view('pages/examples/blank'); 
-	}
-
-
-	public function pace()
-	{
-		$this->load->helper('url'); 
-        $this->load->view('pages/examples/pace'); 
-	}
 
 
 

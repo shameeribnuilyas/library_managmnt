@@ -65,11 +65,12 @@ $route['indexoption/register'] = 'indexoptionController/register';
 
 $route['menu'] = 'menuController';
 
-$route['menu/add_bus_no'] = 'menuController/add_bus_no';
-$route['menu/add_route'] = 'menuController/add_route';
-$route['menu/assign_bus_to_route'] = 'menuController/assign_bus_to_route';
-$route['menu/view_user'] = 'menuController/view_user';
-$route['menu/view_bus'] = 'menuController/view_bus';
+$route['menu/add_location'] = 'menuController/add_location';
+$route['menu/add_new_bin'] = 'menuController/add_new_bin';
+$route['menu/add_new_member'] = 'menuController/add_new_member';
+$route['menu/bin_status'] = 'menuController/bin_status';
+$route['menu/assign_bin_member'] = 'menuController/assign_bin_member';
+$route['menu/view_members'] = 'menuController/view_members';
 
 $route['menu/invoice'] = 'menuController/invoice';
 $route['menu/profile'] = 'menuController/profile';
