@@ -22,39 +22,61 @@ class menuController extends CI_Controller {
         $this->load->view('index'); 
 	}
 
-	public function add_location()
+		public function add_category()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/addLocation');
+        $this->load->view('menu/addcategory'); 
 	}
 
-	public function add_new_bin()
+		public function add_books()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/addnewBin'); 
+        $this->load->view('menu/addbooks');
+	}
+		public function add_student()
+	{
+		$this->load->helper('url'); 
+        $this->load->view('menu/addstudent'); 
 	}
 
-		public function add_new_member()
+		public function add_rfid()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/addnewMember'); 
+        $this->load->view('menu/addrfid'); 
 	}
 
-		public function bin_status()
+		public function assign_rfid()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/binStatus'); 
+        $this->load->view('menu/assignrfid'); 
 	}
 
-		public function assign_bin_member()
+		public function view_books()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/assignBinmember'); 
+        $this->load->view('menu/viewbooks'); 
 	}
-		public function view_members()
+
+		public function view_students()
 	{
 		$this->load->helper('url'); 
-        $this->load->view('menu/viewMembers'); 
+        $this->load->view('menu/viewstudents'); 
+	}
+
+		public function book_entryregister()
+	{
+		$this->load->helper('url'); 
+        $this->load->view('menu/bookentryregister'); 
+	}
+		public function book_returnregister()
+	{
+		$this->load->helper('url'); 
+        $this->load->view('menu/bookreturnregister'); 
+	}
+		public function fine_register()
+	{
+		$this->load->helper('url'); 
+        $this->load->view('menu/fineregister'); 
 	}
 
 

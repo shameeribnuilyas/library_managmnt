@@ -24,7 +24,7 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
+ 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -48,7 +48,7 @@ $this->load->view('components/sidemenu');
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Menu 
+        Menu
         <small>it all starts here</small>
       </h1>
       <ol class="breadcrumb">
@@ -76,22 +76,39 @@ $this->load->view('components/sidemenu');
         <div class="box-body">
            <div class="form-group">
               <div class="row">
-                 <label for="inputEmail3" class="col-sm-2 control-label">Enter Member Name</label>
+                 <label for="inputEmail3" class="col-sm-2 control-label">Enter Book Name</label>
                 <div class="col-xs-5">
-                    <input class="form-control" type="text" placeholder="Enter Member Name">     
+                    <input class="form-control" type="text" placeholder="Enter Book Name">     
                 </div>
               </div>
             </div>
 
             <div class="form-group">
-              <div class="row">
-                 <label for="inputEmail3" class="col-sm-2 control-label">Enter Mobile Number</label>
-                <div class="col-xs-5">
-                    <input class="form-control" type="text" placeholder="Enter Mobile Number">     
-                </div>
+            <div class="row">
+               <label for="inputEmail3" class="col-sm-2 control-label">Enter Book Author</label>
+              <div class="col-xs-5">
+                  <input class="form-control" type="text" placeholder="Enter Book Author">     
               </div>
             </div>
+           </div>
 
+            <div class="form-group">
+            <div class="row">
+                 <label for="inputEmail3" class="col-sm-2 control-label">Select Book Category</label>
+                <div class="col-xs-5">
+                    <select class="form-control select2" style="width: 100%;">
+                      <option selected="selected">Alabama</option>
+                          <option>Alaska</option>
+                          <option>California</option>
+                          <option>Delaware</option>
+                          <option>Tennessee</option>
+                          <option>Texas</option>
+                          <option>Washington</option>
+                </select>
+                </div>
+            </div>
+           </div>
+          
         </div>
         <!-- /.box-body -->
         <div class="box-footer">

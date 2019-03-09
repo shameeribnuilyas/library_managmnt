@@ -33,21 +33,33 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li>
-              <a href="<?php echo site_url('menu/add_location'); ?>"><i class="fa fa-circle-o"></i> Add Location</a></li>
-            <li>
-              <a href="<?php echo site_url('menu/add_new_bin'); ?>"><i class="fa fa-circle-o"></i> Add New Bin</a></li>
-            <li>
-              <a href="<?php echo site_url('menu/add_new_member'); ?>"><i class="fa fa-circle-o"></i> Add New Member</a>
+             <li>
+              <a href="<?php echo site_url('menu/add_category'); ?>"><i class="fa fa-circle-o"></i> Add Book Category</a>
             </li>
             <li>
-              <a href="<?php echo site_url('menu/bin_status'); ?>"><i class="fa fa-circle-o"></i>Bin Status</a>
+              <a href="<?php echo site_url('menu/add_books'); ?>"><i class="fa fa-circle-o"></i> Add Books</a></li>
+            <li>
+              <a href="<?php echo site_url('menu/add_student'); ?>"><i class="fa fa-circle-o"></i> Add Student</a></li>
+            <li>
+            <li>
+              <a href="<?php echo site_url('menu/add_rfid'); ?>"><i class="fa fa-circle-o"></i> Add RFID</a></li>
+            <li>
+              <a href="<?php echo site_url('menu/assign_rfid'); ?>"><i class="fa fa-circle-o"></i> Assign RFID</a>
             </li>
             <li>
-            <a href="<?php echo site_url('menu/assign_bin_member'); ?>"><i class="fa fa-circle-o"></i>Assign Bin Member</a>
+              <a href="<?php echo site_url('menu/view_books'); ?>"><i class="fa fa-circle-o"></i>View Books</a>
             </li>
             <li>
-              <a href="<?php echo site_url('menu/view_members'); ?>"><i class="fa fa-circle-o"></i>View Members</a>
+            <a href="<?php echo site_url('menu/view_students'); ?>"><i class="fa fa-circle-o"></i>View Students</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('menu/book_entryregister'); ?>"><i class="fa fa-circle-o"></i>Book Entry Register</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('menu/book_returnregister'); ?>"><i class="fa fa-circle-o"></i>Book Return Register</a>
+            </li>
+             <li>
+            <a href="<?php echo site_url('menu/fine_register'); ?>"><i class="fa fa-circle-o"></i>Fine Register</a>
             </li>
           </ul>
         </li>

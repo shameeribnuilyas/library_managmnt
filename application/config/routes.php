@@ -65,12 +65,16 @@ $route['indexoption/register'] = 'indexoptionController/register';
 
 $route['menu'] = 'menuController';
 
-$route['menu/add_location'] = 'menuController/add_location';
-$route['menu/add_new_bin'] = 'menuController/add_new_bin';
-$route['menu/add_new_member'] = 'menuController/add_new_member';
-$route['menu/bin_status'] = 'menuController/bin_status';
-$route['menu/assign_bin_member'] = 'menuController/assign_bin_member';
-$route['menu/view_members'] = 'menuController/view_members';
+$route['menu/add_books'] = 'menuController/add_books';
+$route['menu/add_rfid'] = 'menuController/add_rfid';
+$route['menu/add_category'] = 'menuController/add_category';
+$route['menu/add_student'] = 'menuController/add_student';
+$route['menu/assign_rfid'] = 'menuController/assign_rfid';
+$route['menu/view_books'] = 'menuController/view_books';
+$route['menu/view_students'] = 'menuController/view_students';
+$route['menu/book_entryregister'] = 'menuController/book_entryregister';
+$route['menu/book_returnregister'] = 'menuController/book_returnregister';
+$route['menu/fine_register'] = 'menuController/fine_register';
 
 $route['menu/invoice'] = 'menuController/invoice';
 $route['menu/profile'] = 'menuController/profile';

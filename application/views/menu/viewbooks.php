@@ -63,8 +63,9 @@ $this->load->view('components/sidemenu');
 
       <!-- Default box -->
       <div class="box">
+
         <div class="box-header with-border">
-          <h3 class="box-title">View User</h3>
+          <h3 class="box-title">View Books</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -73,10 +74,8 @@ $this->load->view('components/sidemenu');
               <i class="fa fa-times"></i></button>
           </div>
         </div>
-        <div class="box-body">
-          
 
-
+      <div class="box-body">
       <div class="row">
         <div class="col-md-12">
 
@@ -86,42 +85,27 @@ $this->load->view('components/sidemenu');
               <table class="table table-bordered">
                 <tr>
                   <th style="width: 10px">slno</th>
-                  <th>Bin Number</th>
-                  <th>Location</th>
-                  <th>Progress</th>
-                  <th>Percentage</th>
-                  <th>info</th>
+                  <th>Book Name</th>
+                  <th>Book Author</th>
+                  <th>Category</th>
+                  <th>Action</th>
                 </tr>
                 <tr>
                   <td>1.</td>
                   <td>a@a.com</td>
-                  <td>tvm</td>
-                  <td>
-                   <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                    </div>
-                  </td>
-                  <td style="width: 50px">
-                    <span class="badge bg-red" >55%</span>
-                  </td>
-                  <td style="width: 100px">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-info">view members</button>
+                  <td>aa</td>
+                  <td>aa</td>
+                  <td style="width: 300px">
+                      <div class="btn-group">
+                      <button type="button" class="btn btn-info">update</button>
+                      <button type="button" class="btn btn-danger">delete</button>
                     </div>
                   </td>
                 </tr>
               </table>
             </div>
             <!-- /.box-body -->
-            <div class="box-footer clearfix">
-              <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div>        
+        
         </div>
       </div>
 
@@ -137,9 +121,15 @@ $this->load->view('components/sidemenu');
 
         </div>
         <!-- /.box-body -->
-        <div class="box-footer">
-          Footer
-        </div>
+              <div class="box-footer clearfix">
+              <ul class="pagination pagination-sm no-margin pull-right">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>  
         <!-- /.box-footer-->
       </div>
       <!-- /.box -->
